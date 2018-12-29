@@ -1,1 +1,1 @@
-$.ajax({});
+require(["../js/config.js"],function(){require(["jquery","swiper","bscroll"],function(e,i,n){i=new i(".banner",{autoplay:!0,clickable:!0}),n=new n("section",{probeType:2,click:!0})})}),init();

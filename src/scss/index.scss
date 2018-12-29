@@ -2,4 +2,134 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+html,
+body,
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    .head {
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding: 15px 10px;
+        justify-content: space-between;
+        dl {
+            &:nth-child(1) {
+                flex: 1;
+                display: flex;
+                dt {
+                    width: 60px;
+                    height: 60px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                dd {
+                    margin-left: 10px;
+                    h3 {
+                        font-size: 15px;
+                        font-weight: normal;
+                        span {
+                            font-size: 15px;
+                            color: orange;
+                        }
+                    }
+                    p {
+                        margin-top: 5px;
+                        color: #ccc;
+                        span {
+                            border: 1px solid #5ADAD0;
+                            color: #5ADAD0;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+            &:nth-child(2) {
+                text-align: center;
+                i.icon {
+                    font-size: 30px;
+                    color: #FDF4EA
+                }
+                dd {
+                    color: #ccc;
+                }
+            }
+        }
+    }
+}
+
+.banner,
+.swiper-wrapper,
+.swiper-slide {
+    width: 100%;
+    height: 160px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+section {
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+    .bsc-list {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+        line-height: 40px;
+        font-size: 14px;
+        li {
+            &.active {
+                color: orange;
+                border-bottom: 2px solid orange;
+                padding: 0 30px;
+            }
+        }
+    }
+    .con {
+        display: flex;
+        flex-wrap: wrap;
+        dl {
+            margin-top: 10px;
+            width: 50%;
+            dt {
+                text-align: center;
+                img {
+                    width: 80%;
+                    height: 80%;
+                }
+            }
+            dd {
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
 }
